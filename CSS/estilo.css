@@ -1,0 +1,40 @@
+header {
+    background: #aa0000;
+}
+
+nav {
+    margin: 10px;
+    background: #00aa00;
+}
+
+main {
+    height: 80px; position: relative;
+}
+
+article {
+    left: 0px;
+    position: absolute;
+    background: #0000aa;
+    text-align: center;
+    width: 80%;
+}
+
+section {
+    margin: 10px;
+    background: #a0a000;
+}
+
+aside {
+    right: 0px;
+    position: absolute;
+    background: #00a0a0;
+    text-align: center;
+    width: 20%;
+}
+
+footer {
+    background: #a0a0a0;
+}
+
+
+p {color: greenyellow;}
