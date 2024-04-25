@@ -1,0 +1,133 @@
+.=========.
+|   Dia   |
+'========='
+Navegador - home button, index, searcher, options (repetir, cuenta, carrito)
+    sub - ofertas, compras especiales, folletos, promos, tutoriales
+Footer - info de contacto (tel, horario atencion, redes sociales), info de asistencia, opciones de compra, 
+
+* Inicio
+    - slider auto & flechas (ofertas x7)
+    - productos mas comprados x6
+    - productos especiales (tematica seleccionada)
+    - slider auto & flechas (promos mas notables x4)
+    - productos con descuento (tematica seleccionada)
+    - promos con descuentos (slider auto)
+    - seleccion de productos (tematica seleccionada & slider flechas) 
+    - productos con descuento (tematica seleccionada)
+    - Anuncios especiales (slider flechas)
+
+* Productos
+    - Filtros, sub categorias, categorias, departamentos, marcas, nombre del vendedor, marcador de precio
+    - Ordenar por, selector (a-z, nombre, fecha, relevancia, mas vendidos)
++------------------caja diseño------------------------+
+| [Imagen/"me gusta"/"especial/promo"]
+| ['nombre de producto' "detalle del contenido"]
+| [promo/descuento]
+| [precio con descuento/precio actual]
+| [opciones de carrito]
+| [notas de precio]
++------------------------------------------------------+
+
+.=============.
+|  Carrefour  |
+'============='
+Navegador - index, home button, searcher, options (favoritos, cuenta, carrito)
+    sub - opciones de envio, tutoriales, promos, folletos, localizaciones, compras especiales, 
+Footer - info de contacto (redes sociales, link de contacto), info de asistencia (tutoriales e informacion 
+util), opciones de compra, subscripcion a ofertas y promos
+
+* Inicio
+    - Promociones
+	# slider (promociones, ofertas y servicios x13)
+	# promos destacadas x6
+	# productos con descuento (tematica seleccionada)
+	# seccion de promociones y servicios (slider con flechas x3)
+	# promo con servicios (productos seleccionados)
+	# promos con descuento (productos seleccionados)
+	# seccion de anuncios (servicios y promociones)
+
+    - Hogar & Electro
+	# slider auto & flechas (promociones, ofertas y servicios x3)
+	# selector de categorias n1
+	# promos especiales (productos seleccionados, mostrados x4 con slider)
+	# catalogos mas seleccionados
+	# ofertas especiales (productos seleccionados, mostrados x4 con slider)
+	# catalogos mas seleccionados n2
+	# productos solo ofertados en linea (productos seleccionados, mostrados x4 con slider)
+
+    - Servicios
+	# vinculados a la pagina (x4)
+	# descuento por servicio
+	# descuento del dia (en categorias y servicios seleccionados, mostrados x4)
+	# promocion de servicio
+
+* Productos
+    - Filtros, marca, categorias, sub categorias, gama de precio
+    - Ordenar por, selector (a-z, nombre, fecha, relevancia, mas vendidos)
++------------------caja diseño------------------------+
+| [Imagen]
+| [etiquetas]
+| [libre de gluten]
+| [ley gondolas/distribuidor_origen]
+| [listones][beneficios con servicios]
+| [medallas/producto destacado]
+| [calificacion]
+| [precio x unidad/precio con descuento + descuento efectuado, precio actual/precio sin descuento]
+| ['nombre y detalle del de producto']
+| [notas de precio (precio por kg)]
+| ["me gusta"/opciones de carrito]
++------------------------------------------------------+
+
+.==========.
+|   COTO   |
+'=========='
+Navegador - ofertas, descuentos, sucursales, institucional, COTO DIGITAL
+    sub - opciones de envio, tutoriales, promos, folletos, localizaciones, compras especiales, 
+Footer - info de contacto (redes sociales, link de contacto), info de contacto (direccion, localidad, nro de tel y
+horario de atencion, mail o canales de contato) links de interes (tutoriales e informacion util), 
+
+* Inicio
+    - slider (auto y flechas) con informacion (x3)
+    - ofertas y catalogos (slider con flechas limitado, ventada con contacto a redes sociales)
+    - promociones del dia de la semana (muestra descuentos de un dia en especifico)
+    - presentacion de aspecto comunidad
+    - presentacion de ofeerta de empleo
+    - seccion de alerta por estafas
+
+.=================.
+|   COTO DIGITAL  |
+'================='
+Navegador - boton pagina de inicio, buscador, categorias de compra (aparece cuando se pasea por la pagina), ingresar 
+cuenta
+    sub (desaparece cuando se pasea por la pagina) - ofertas, almacen, bebidas, frescos, etc
+Footer - suscripcion (para obtener ofertas), servicio al cliente, info de contacto (redes sociales, link de 
+contacto, direccion, localidad, nro de tel y horario de atencion, mail o canales de contato), info de la empresa
+links de interes (tutoriales e informacion util sobre la empresa)
+
+* Inicio
+    - slider (auto y deslizable con mouse, en espacio especifico) con promos y descuentos (x12)
+    - slider (auto, seleccionador) con productos especiales seleccionados (x7)
+    - promociones del dia de la semana (muestra descuentos de un dia en especifico por medio de un slider auto y 
+	deslizable con mouse)
+    - categorias alimentos especificos (exclusivos online)
+    - oportunidades hogar y textil (promociones, descuentos)
+    - categorias en electrodomesticos
+    - categorias destacadas
+
+* Productos
+    - Filtros, categorias, TACC, ofertas, marca, 
+    - Mostrar/organizar mosaicos: cuadricula o lista
+    - Ordenar por, selector (a-z, nombre, fecha, relevancia, mas vendidos)
++------------------caja diseño------------------------+
+| [etiquetas/liston de oferta]
+| [Imagen]
+| [Nombre]
+| [medallas/producto destacado]
+| [notas de precio (precio por kg)]
+| [precio actual/precio sin descuento]
+| [descuento efectuado + precio con descuento]
+| [planes de cuotas]
+| [opciones de carrito]
+| [pestaña comparar]
++------------------------------------------------------+
+
