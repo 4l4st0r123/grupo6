@@ -5,6 +5,123 @@
     <title>Inicio</title>
 </head>
 <body>
-    
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <!-- Ingreso del nombre -->
+            <label for="nombre">Nombre: </label>
+            <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aqui..." required>
+            <br><br>
+
+            <!-- Ingreso del apellido -->            
+            <label for="apellido">Apellido: </label>
+            <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aqui..." required>
+            <br><br>
+            
+            <!-- Ingreso del DNI -->
+            <label for="dni">Nro DNI: </label>
+            <input type="number" name="dni" >
+            <br><br>
+            
+            <!-- multiples opciones -->
+            <label for="genero">Género: </label>
+            <select name="genero" multiple="multiple" id="genero">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="NonBI">No Binario</option>
+                <option value="Queer">Otro</option>
+            </select>
+            <br><br>
+            
+            <!-- fecha de nacimiento -->
+            <label for="fecha">Fecha nacimiento: </label>
+            <input type="date" name="fecha" >
+            <br><br>
+            
+            <!-- Usuario y Contraseña -->
+            <label for="user">Usuario: </label>
+            <input size="10" type="text" name="user" >
+            <label for="pass">Clave: </label>
+            <input size="10" type="password" name="pass" >
+            <br><br>
+            
+            <!-- Ingreso de la dirreccion -->
+            <label for="direccion">Calle: </label>
+            <input size="20" type="text" name="direccion">
+            <label for="dirNum">Número: </label>
+            <input type="number" name="dirNum" >
+            <br><br>
+            
+            <!-- fecha de nacimiento -->
+            <label for="fecha">Fecha nacimiento: </label>
+            <input type="date" name="fecha" >
+            <br><br>
+
+            <!-- Seleccion de la zona -->
+            Seleccione zona geográfica:
+            <select name="zona">
+                <option value="centro">Centro</option>
+                <option value="norte">Norte</option>
+                <option value="sur">Sur</option>
+            </select>
+            <br><br>
+            
+            <!-- Ingreso de la direccion de correo -->
+            <label for="email">email: </label>
+            <input type="email" name="email" >
+            <br><br>
+
+           <!-- Ingreso de un archivo -->
+            <label for="foto">foto: </label>
+            <input type="file" name="foto" >
+            <br><br>
+            
+            <!-- selector de color -->
+            <label for="color">Color Favorito: </label>
+            <input type="color" name="color" >
+        </fieldset>
+        <br>
+        
+        <fieldset>
+            <legend>Intereses personales: </legend>
+            <input type="checkbox" id="software" name="intereses" value="Software">
+            <label for="software">Software</label>
+            
+            <input type="checkbox" id="hardware" name="intereses" value="Hardware">
+            <label for="hardware">Hardware</label>
+            
+            <input type="checkbox" id="diseno" name="intereses" value="Disenio">
+            <label for="diseno">Diseño grafico</label>
+            
+            <input type="checkbox" id="otros" name="intereses" value="Otros">
+            <label for="otros">Otros</label>
+
+        </fieldset>
+        <br>
+
+        <!-- Seleccion de Lenguaje de programacion -->
+        <fieldset>
+            <legend>Lenguaje de programación favorito</legend>
+            <input type="radio" id="html" name="leng_prog" value="HTML" checked> <!-- checked la marca por defecto-->
+            <label for="html">HTML</label><br>
+
+            <input type="radio" id="css" name="leng_prog" value="CSS">
+            <label for="css">CSS</label><br>
+
+            <input type="radio" id="javascript" name="leng_prog" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </fieldset>
+        <br>
+
+        <!-- Comentario -->
+        <label for="comentario">Comentario:</label><br>
+        <textarea name="comentario" id="comentario" cols="80" rows="6"></textarea>
+
+        <!-- Botones para controlar el formulario -->
+        <br><br>
+        <input type="reset" value="Borrar formulario">
+        <input type="submit" value="Enviar datos">
+
+    </form>
 </body>
 </html>
