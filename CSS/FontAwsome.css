@@ -1,0 +1,29 @@
+.nav {
+    background-color: #48e;
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 9px;
+    color: white;
+}
+
+.nav__li:hover {
+    color: #bbb;
+}
+
+.nav__li:hover > a {
+    color: #bbb;
+    border: 1px solid #bbb;
+}
+
+.nav__li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav__li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
