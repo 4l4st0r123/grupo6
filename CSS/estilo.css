@@ -85,8 +85,7 @@ p {color: greenyellow;}
     /*color: white;*/
 }
 
-/*
-@media(max-width 950px){
-    body{background: #d90429;}
+
+@media(max-width: 900px){
+    img {width: 70%;}
 }
-*/
