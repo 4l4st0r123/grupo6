@@ -26,24 +26,69 @@
     </header>
     <main>
         <article>
-        bienvenido <br>
-    <!--
-            <h1>Bienvenido</h1>
-            <p>estas en un nuevo servicio de compras</p>
-    -->
             <section>
-                <div><img src="IMG/bananas.png" alt="bananas"></div>
-                <div><span>calificacion</span></div>
-                <div><span>nombre del producto</span></div>
-                <div><span>precio</span></div>
-                <div><span>precio por kg</span></div>
-                <div><span>carrito</span></div>
+            <div class="orden">
+                <label for="order">Ordenar por:</label>
+                <select name="order" id="order">
+                    <option value="none" selected></option>
+                    <option value="alfabe">A-Z</option>
+                    <option value="invent">Mas reciente</option>
+                    <option value="releva">Mas popular</option>
+                    <option value="ventas">Mas vendido</option>
+                </select>
+            </div>
             </section>
-            <section>contenido</section>
-            <section>contenido</section>
-            <section>contenido</section>
+            <br>
+            <section>
+                <div class="producto">
+                    <div><img src="IMG/bananas.png" alt="bananas"></div>
+                    <div><span>calificacion</span></div>
+                    <div><span>nombre del producto</span></div>
+                    <div><span>precio</span></div>
+                    <div><span>precio por kg</span></div>
+                    <div><span>carrito</span></div>
+                </div>
+                <div class="producto">marciano</div>
+                <div class="producto">marciano</div>
+                <div class="producto">marciano</div>
+                <div class="producto">marciano</div>
+                <div class="producto">marciano</div>
+                <div class="producto">marciano</div>
+                <div class="producto">marciano</div>
+                <div class="producto">marciano</div>
+                <div class="producto">marciano</div>
+                <div class="producto">marciano</div>
+                <div class="producto">marciano</div>
+            </section>
         </article>
-        <aside>Aparte<br><br><br></aside>
+        <aside>
+            <fieldset>
+                <legend>Filtros</legend>
+                Productos <br>
+                <input type="checkbox" id="alim" name="filter" value="alimentos">
+                <label for="alim">Alimentos</label><br>
+                
+                <input type="checkbox" id="beb" name="filter" value="bebidas">
+                <label for="beb">Bebidas</label><br>
+                
+                <input type="checkbox" id="limp" name="filter" value="limpieza">
+                <label for="limp">Limpieza</label><br>
+                
+                <input type="checkbox" id="banio" name="filter" value="banio">
+                <label for="banio">Baño</label><br>
+                
+                <br> Oferta <br>
+                <input type="checkbox" id="desc" name="filter" value="descuento">
+                <label for="desc">Descuento</label><br>
+                
+                <input type="checkbox" id="prom" name="filter" value="promo">
+                <label for="prom">Promo</label><br>
+                
+                <input type="checkbox" id="limt" name="filter" value="limitado">
+                <label for="limt">Limitado</label><br>
+            </fieldset>
+            <br>
+        </aside>
     </main>
     <footer>Final</footer>
 </body>

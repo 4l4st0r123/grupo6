@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="1.0" viewHeight="348" viewWidth="348" d:locked="false" xmlns="http://ns.adobe.com/fxg/2008" xmlns:d="http://ns.adobe.com/fxg/2008/dt">
+  <BitmapGraphic source="@Embed('Sin título-2.assets/images/Fondo.png')" repeat="false" d:locked="true" d:userLabel="Fondo"/>
+  <BitmapGraphic x="-19" y="-5" width="371" height="356" source="@Embed('Sin título-2.assets/images/Capa 1.png')" repeat="false" d:userLabel="Capa_1"/>
+  <BitmapGraphic x="135" y="127" width="133" height="51" source="@Embed('Sin título-2.assets/images/Forma 8.png')" repeat="false" d:userLabel="Forma_8"/>
+  <TextGraphic fontFamily="Rockwell Extra Bold" fontSize="36" color="#ffffff" whiteSpaceCollapse="preserve" x="59" y="40" d:userLabel="4_al_precio_de_3">
+    <content><p><span>4 al precio de 3</span></p></content>
+  </TextGraphic>
+  <BitmapGraphic width="348" height="332" source="@Embed('Sin título-2.assets/images/Hasta el viernes.png')" repeat="false" d:userLabel="Hasta_el_viernes"/>
+  <BitmapGraphic x="-260" y="-390" width="1494" height="855" source="@Embed('Sin título-2.assets/images/Capa 2.png')" repeat="false" d:userLabel="Capa_2"/>
+  <TextGraphic fontFamily="Rockwell Extra Bold" fontSize="36" color="#ffffff" whiteSpaceCollapse="preserve" x="268" y="34" d:userLabel="desayuno">
+    <content><p><span>desayuno</span></p></content>
+  </TextGraphic>
+  <TextGraphic fontFamily="Rockwell Extra Bold" fontSize="36" color="#ffffff" whiteSpaceCollapse="preserve" x="79" y="286" d:userLabel="Desayuno">
+    <content><p><span>Desayuno</span></p></content>
+  </TextGraphic>
+  <TextGraphic whiteSpaceCollapse="preserve" d:userLabel="Capa_8">
+    <content><p><span/></p></content>
+  </TextGraphic>
+  <TextGraphic fontFamily="Rockwell Extra Bold" fontSize="48" whiteSpaceCollapse="preserve" x="94" y="204" d:userLabel="2">
+    <content><p><span>2</span></p></content>
+  </TextGraphic>
+</Graphic>
