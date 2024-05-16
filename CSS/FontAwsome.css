@@ -1,5 +1,5 @@
 .nav {
-    background-color: #0097af;
+    background-color: #57e1fb;
 }
 
 .nav__li {
@@ -9,12 +9,12 @@
 }
 
 .nav__li:hover {
-    color: #57e1fb;
+    color: #0097af;
 }
 
 .nav__li:hover > a {
-    color: #57e1fb;
-    border: 1px solid #57e1fb;
+    color: #0097af;
+    border: 1px solid #0097af;
 }
 
 .nav__li a {
