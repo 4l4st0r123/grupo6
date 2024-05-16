@@ -1,0 +1,42 @@
+body {
+    background-color: #99f;
+    min-height: 100vh;
+}
+
+header, footer {
+    padding: 2px;
+    background-color: red;
+}
+
+main {
+    padding: 2px;
+    background-color: blue;
+}
+
+section {
+    text-align: center;
+}
+
+.oferta {
+    background-color: green;
+    overflow-inline: visible;
+    height: 350px;
+    overflow: hidden;
+}
+
+.oferta > div {
+    background-color: purple;
+    display: inline-block;
+}
+
+img:hover {
+    transform: scale(0.9, 0.9);
+}
+
+#selector > div {
+    display: inline-block;
+}
+
+#selector .item-1 {
+    color: white;
+}
