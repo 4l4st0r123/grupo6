@@ -6,6 +6,7 @@
 
 .nav {
     background-color: #0097af;
+    border-radius: 100px;
 }
 
 .nav__li {

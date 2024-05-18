@@ -8,7 +8,8 @@ nav {
 }
 
 main {
-    height: 80px; position: relative;
+    height: 80px;
+    position: relative;
 }
 
 article {
@@ -36,15 +37,63 @@ footer {
 
 p {color: greenyellow;}
 
-img {
-    margin: 10px;
-    width: 90%;
-}
-
-.producto {    
-    margin: 10px;
+#producto {    
     background: skyblue;
+    /*
+    margin: 10px;
     width: 23%;
     text-align: center;
     display: inline-block;
+    */
+}
+
+.flexbox-container {
+    height: 95vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.flexbox-item {
+    border: 1px solid black;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.item {
+    min-height: 50px;
+    align-self: center;
+    flex: 1 1 15;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    /*
+    grid-template: 
+        "imagen" 60px
+        "calificacion" 30px
+        "nombre" 20px
+        "precio" 10px
+        "kilo" 5px
+        "carrito" 1px
+        100px;
+    */
+}
+
+.grid-item {
+    border: 4px solid black;
+}
+
+.box {
+    
 }
