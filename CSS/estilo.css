@@ -1,48 +1,39 @@
-body{
+
+body {
     display: flex;
     flex-direction: column;
     margin: 10px;
-    /*background-color: #e6e9eba;*/
-    background-color: #cdd2d3;
-    position: relative;
+/*    position: absolute;*/
     padding-bottom: 3em;
     min-height: 100vh;
-    /*para  ver el body*/
-    border: 6px solid red;
+    border: 6px solid blue;
 }
 
 header {
-    /*background:#ef233c;*/
-    background: #d90429;
-
+    background:#dd1199;
+    position: relative;
 }
 
 nav {
     margin: 10px;
-    /*background: #00aa00;*/
     background: #41cfe8;
 }
 
 main {
     height: 80px;
-     position: relative;
+/*    position: relative;*/
 }
 
 article {
     left: 0px;
     position: absolute;
-
-   /*background:#0000FF*/
     background: #2cbcd5;
     text-align: center;
     width: 80%;
 }
 
-
-
 section {
     margin: 10px;
-   /* background: #a0a000;*/
     background: #b0b48c;
 }
 
@@ -63,7 +54,7 @@ footer {
 }
 
 
-p {color: greenyellow;}
+p { color: greenyellow; }
 
 /*
 .promo {
@@ -79,7 +70,13 @@ p {color: greenyellow;}
 }
 
 .main-logo {
-    display: inline-block;
+    display: flex;
+    background-color: #006f81;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+/*    position: absolute;*/
 }
 
 .logo {
@@ -89,11 +86,21 @@ p {color: greenyellow;}
 }
 
 .cart {
-    color: white;
-    margin: 0px;
-    padding: 10px;
+    background-color: #41cef8;
+    padding: 5px 5px;
+    border-radius: 8px;
+    position: relative;
+/*
+    right: 0px;
+    top: 15%;
+*/
+}
+
+.cart > i {
     background-color: #0097af;
-    border-radius: 2px;
+    border: 2px solid #abf0fd;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 @media(max-width: 900px){

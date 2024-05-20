@@ -10,3 +10,67 @@ table {
 th, td {
     height: 50px;
 }
+
+.Color {
+    border: 1px solid black;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    font-family: monospace;
+}
+
+.C5, .B1 {
+    background-color: #57e1fb;
+}
+
+.B5, .O1 {
+    background-color: #0097af;
+}
+
+.O2 { color: white; background-color: #006f81;}
+.O3 { color: white; background-color: #004a55;}
+.O4 { color: white; background-color: #002429;}
+.O5 { color: white; background-color: #000000;}
+
+.B2 { background-color: #41cef8;}
+.B3 { background-color: #2cbcd5;}
+.B4 { background-color: #16aac2;}
+
+.C1 {background-color: #ffffff;}
+.C2 {background-color: #d5f7fe;}
+.C3 {background-color: #abf0fd;}
+.C4 {background-color: #80e8fc;}
+
+.main-logo {
+    display: flex;
+    background-color: #006f81;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+/*    position: absolute;*/
+}
+
+.logo {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.cart {
+    background-color: #41cef8;
+    padding: 5px 5px;
+    border-radius: 8px;
+    position: relative;
+/*
+    right: 0px;
+    top: 15%;
+*/
+}
+
+.cart > i {
+    background-color: #0097af;
+    border: 2px solid #abf0fd;
+    border-radius: 4px;
+    padding: 5px;
+}
