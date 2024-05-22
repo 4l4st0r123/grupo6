@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-header > nav {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    z-index: 1;
-}
-
 body {
     font-family: 'Cabin', sans-serif;
     font-size: 1rem;
@@ -68,6 +61,7 @@ footer > p {
     justify-content: space-between;
     padding: 10px;
     color: white;
+    width: vmax;
 }
 
 .logo {
@@ -108,19 +102,24 @@ footer > p {
 
 /* FontAwesome */
 .nav {
+    display: flex;
+    justify-content: space-evenly;
     background-color: #0097af;
     border-radius: 100px;
+    margin: 5px;
     width: vmax;
 }
 
 .nav__li {
     display: inline-block;
-    padding: 9px;
+    padding: 10px;
     color: #ffffff;
+    margin: 0px 10px;
 }
 
 .nav__li:hover {
     color: #57e1fb;
+    border: 1px dashed #57e1fb;
 }
 
 .nav__li:hover > a {
@@ -135,7 +134,7 @@ footer > p {
 
 .nav__li i {
     text-align: right;
-    margin-right: 5px;
+    margin: 5px;
 }
 
 @media (max-width: 900px) {
@@ -146,11 +145,19 @@ footer > p {
     }
     
     .logo {
+        position: relative;
+        left: -10px;
         margin: 10px;
+    }
+    
+    .cart {
+        right: 10px;
+        top: 0px;
     }
     
     /* FontAwesome */
     .nav {
+        display: block;
         border-radius: 0px;
         background-color: #57e1fb;
     }

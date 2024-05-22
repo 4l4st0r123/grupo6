@@ -1,25 +1,11 @@
-body {
+main {
+    height: 80px;
     display: flex;
     flex-direction: column;
     margin: 10px;
 /*    position: absolute;*/
     padding-bottom: 3em;
     min-height: 100vh;
-    border: 6px solid blue;
-}
-
-header {
-    background:#dd1199;
-    position: relative;
-}
-
-nav {
-    margin: 10px;
-    background: #41cfe8;
-}
-
-main {
-    height: 80px;
 /*    position: relative;*/
 }
 
@@ -52,8 +38,6 @@ footer {
     background-color: #4488ee;
 }
 
-p { color: greenyellow; }
-
 /*
 .promo {
 //list-style: none;
@@ -68,5 +52,5 @@ p { color: greenyellow; }
 }
 
 @media(max-width: 900px){
-    img {width: 70%;}
+    main img {width: 70%;}
 }
