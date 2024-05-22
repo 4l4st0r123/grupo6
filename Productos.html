@@ -8,11 +8,11 @@
     <title>Productos</title>
     <link rel="icon" href="IMG/Chango.ico">
     <link rel="stylesheet" href="CSS/productos.css">
-    <link rel="stylesheet" href="CSS/FontAwsome.css">
+    <link rel="stylesheet" href="CSS/general-style.css">
     <script src="https://kit.fontawesome.com/01a7edaade.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="main-logo">
             <div class="logo">
                 <a href="Index.html"><img src="IMG/LogoIco.png" alt="ChangoPay"></a>
@@ -23,33 +23,38 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-<!--        <i class="fa-brands fa-youtube"></i>-->
+        <!--        <i class="fa-brands fa-youtube"></i>-->
         <nav class="nav">
             <ul class="nav__ul">
                 <li class="nav__li"><i class="fas fa-home"></i><a href="Index.html">Pagina inicial</a></li>
                 <li class="nav__li"><i class="fas fa-info-circle"></i><a href="Informacion.html">Informacion</a></li>
-                <li class="nav__li"><i class="fa-solid fa-address-card"></i><a href="Inicio.html">Registro</a></li>
+                <li class="nav__li"><i class="fa-solid fa-address-card"></i><a href="Registro.html">Registro</a></li>
                 <li class="nav__li"><i class="fas fa-newspaper"></i><a href="Ofertas.html">Ofertas</a></li>
                 <li class="nav__li"><i class="fas fa-store"></i><a href="Productos.html">Productos</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <article>
-            <section>
-            <div class="orden">
-                <label for="order">Ordenar por:</label>
-                <select name="order" id="order">
-                    <option value="none" selected></option>
-                    <option value="alfabe">A-Z</option>
-                    <option value="invent">Mas reciente</option>
-                    <option value="releva">Mas popular</option>
-                    <option value="ventas">Mas vendido</option>
-                </select>
-            </div>
-            </section>
-            <br>
-            <section class="grid-container">
+    <main class="container">
+        <section class="item contenido" id="section-item">
+            <article class="item article-order">
+                <div class="buscador">
+                    <label for="search">Buscar:</label>
+                    <input id="search" size="20" type="text" name="search" placeholder="Nombre de producto" minlength>
+                </div>
+                <div class="organizador">
+                    <label for="order">Ordenar por:</label>
+                    <select name="order" id="order">
+                        <option value="none" selected>Seleccione</option>
+                        <option value="alfabe">A-Z</option>
+                        <option value="invent">Mas reciente</option>
+                        <option value="releva">Mas popular</option>
+                        <option value="ventas">Mas vendido</option>
+                    </select>
+                </div>
+            </article>
+            
+            
+            <!--<article class="grid-container">
                 <div id="producto" class="grid-item flexbox-container box">
                     <div class="flexbox-item item"><img src="IMG/bananas.png" alt="bananas"></div>
                     <div class="flexbox-item item"><span>calificacion</span></div>
@@ -69,12 +74,74 @@
                 <div id="producto" class="grid-item box">marciano</div>
                 <div id="producto" class="grid-item box">marciano</div>
                 <div id="producto" class="grid-item box">marciano</div>
-            </section>
-        </article>
-        <aside>
+            </article>-->
+            <article class="article-items">
+                <div class="producto">
+                    <div><p>BANANA</p></div>
+                    <div><img src="IMG/bananas.png" alt="bananas"></div>
+                </div>
+
+                <div class="producto">
+                    <div><p>PEREJIL</p></div>
+                    <div><img src="IMG/perejil.png" alt="perejil"></div>
+                </div>
+
+                <div class="producto">
+                    <div><p>CARNE</p></div>
+                    <div><img src="IMG/carne.png" alt="carne"></div>
+                </div>
+
+                <div class="producto">
+                    <div><p>SHAMPOO</p></div>
+                    <div><img src="IMG/shamp.png" alt="shampoo"></div>
+                </div>
+
+                <div class="producto">
+                    <div><p>JABÓN</p></div>
+                    <div><img src="IMG/jab.png" alt="jabon"></div>
+                </div>
+
+                <div class="producto">
+                    <div><p>LIMPIADOR</p></div>
+                    <div><img src="IMG/limp.png" alt="limpiador"></div>
+                </div>
+
+                <div class="producto">
+                    <div><p>QUESO</p></div>
+                    <div><img src="IMG/queso.png" alt="queso"></div>
+                </div>
+
+                <div class="producto">
+                    <div><p>CREMA DE LECHE</p></div>
+                    <div><img src="IMG/crema_de_leche.png" alt="crema de leche"></div>
+                </div>
+
+                <div class="producto">
+                    <div><p>DULCE DE LECHE</p></div>
+                    <div><img src="IMG/dulce_de_leche.png" alt="dulce de leche"></div>
+                </div>
+
+                <div class="producto">
+                    <div><p>YOGURT</p></div>
+                    <div><img src="IMG/yogurisimo.jpg" alt="yogurt"></div>
+               </div>
+
+                <div class="producto">
+                    <div><p>BERENJENA</p></div>
+                    <div><img src="IMG/025.jpg" alt="berenjena"></div>
+                </div>
+                
+                <div class="producto">
+                    <div><p>PALTA</p></div>
+                    <div><img src="IMG/06.jpg" alt="palta"></div>
+                </div>
+            </article>
+        </section>
+        
+        <aside class="item left">
             <fieldset>
                 <legend>Filtros</legend>
-                Productos <br>
+                <p>Productos</p>
                 <input type="checkbox" id="alim" name="filter" value="alimentos">
                 <label for="alim">Alimentos</label><br>
                 
@@ -86,8 +153,8 @@
                 
                 <input type="checkbox" id="banio" name="filter" value="banio">
                 <label for="banio">Baño</label><br>
-                
-                <br> Oferta <br>
+                <br>
+                <p> Oferta </p>
                 <input type="checkbox" id="desc" name="filter" value="descuento">
                 <label for="desc">Descuento</label><br>
                 
@@ -99,7 +166,12 @@
             </fieldset>
             <br>
         </aside>
+        <section class="item footer">
+            <p>Has llegado al final de la página, si quieres ver nuestras ofertas has <a href="Ofertas.html">CLICK AQUÍ</a></p>
+        </section>
     </main>
-    <footer>Final</footer>
+    <footer>
+        <div class="arrow"><a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
+    </footer>
 </body>
 </html>

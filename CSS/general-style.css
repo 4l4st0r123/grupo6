@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header > nav {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color:#000000;
+    margin: 0;
+  }
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url("/IMG/supermarket.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1, p {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #f5fffa;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 15);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.3rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+footer > p {
+  text-align: center;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+/* Header */
+.main-logo {
+    display: flex;
+    background-color: #006f81;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+}
+
+.logo {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.cart {
+    background-color: #41cef8;
+    padding: 5px;
+    border-radius: 8px;
+    position: relative;
+    right: 0px;
+    top: 15%;
+}
+
+.cart > i {
+    background-color: #0097af;
+    border-radius: 4px;
+    border: 2px solid #abf0fd;
+    padding: 5px;
+    font-size: 30px;
+    margin: 2px;
+}
+
+.arrow i {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 35px;
+    color: white;
+    background-color: #0097af;
+    border: 2px solid #abf0fd;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* FontAwesome */
+.nav {
+    background-color: #0097af;
+    border-radius: 100px;
+    width: vmax;
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 9px;
+    color: #ffffff;
+}
+
+.nav__li:hover {
+    color: #57e1fb;
+}
+
+.nav__li:hover > a {
+    color: #57e1fb;
+    border: 1px solid #57e1fb;
+}
+
+.nav__li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav__li i {
+    text-align: right;
+    margin-right: 5px;
+}
+
+@media (max-width: 900px) {
+    
+    /* Header */
+    .main-logo {
+        text-align: center;
+    }
+    
+    .logo {
+        margin: 10px;
+    }
+    
+    /* FontAwesome */
+    .nav {
+        border-radius: 0px;
+        background-color: #57e1fb;
+    }
+    
+    .nav__ul {
+        padding: 5px;
+    }
+    
+    .nav__li {
+        display: block;
+        background-color: #0097af;
+        padding: 5px;
+        margin: 5px;
+    }
+}

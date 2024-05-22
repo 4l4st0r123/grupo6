@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="icon" href="IMG/Chango.ico">
+    <link rel="stylesheet" href="CSS/registro.css">
+    <link rel="stylesheet" href="CSS/general-style.css">
+    <script src="https://kit.fontawesome.com/01a7edaade.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="main-logo">
+            <div class="logo">
+                <a href="Index.html"><img src="IMG/LogoIco.png" alt="ChangoPay"></a>
+            </div>
+            <div class="cart">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+<!--        <i class="fa-brands fa-youtube"></i>-->
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><i class="fas fa-home"></i><a href="Index.html">Pagina inicial</a></li>
+                <li class="nav__li"><i class="fas fa-info-circle"></i><a href="Informacion.html">Informacion</a></li>
+                <li class="nav__li"><i class="fa-solid fa-address-card"></i><a href="Registro.html">Registro</a></li>
+                <li class="nav__li"><i class="fas fa-newspaper"></i><a href="Ofertas.html">Ofertas</a></li>
+                <li class="nav__li"><i class="fas fa-store"></i><a href="Productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <form action="">
+        <article>
+            <h1>FORMULARIO DE REGISTRO</h1>
+            <p>¡Registrate en nuestra página para no perderte las últimas promociones y ofertas!</p>
+        </article>
+        <div class="form-general">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <!-- Ingreso del nombre -->
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" size="30" type="text" name="nombre" placeholder="Ingrese su nombre aqui..." minlength="3" required>&emsp;
+                <!-- Ingreso del apellido -->            
+                <label for="apellido">Apellido: </label>
+                <input id="apellido" size="30" type="text" name="apellido" placeholder="Ingrese su apellido aqui..." required>
+                <br>
+                <!-- Ingreso del DNI -->
+                <label for="dni">Nro DNI: </label>
+                <input id="dni" type="number" name="dni" required min="0">&emsp;
+
+                <!-- multiples opciones -->
+                <label for="genero">Género: </label>
+                <select id="genero" name="genero">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="NonBI">No Binario</option>
+                    <option value="Queer" selected>Otro</option>
+                </select>
+
+                <!-- fecha de nacimiento -->
+                <label for="fecha">Fecha nacimiento: </label>
+                <input id="fecha" type="date" name="fecha" >
+                <br>
+
+                <!-- Ingreso de la dirreccion -->
+                <label for="direccion">Calle: </label>
+                <input id="direccion" size="20" type="text" name="direccion">
+                
+                <label for="dirNum">Número: </label>
+                <input id="dirNum" type="number" name="dirNum" >
+
+                <!-- Seleccion de la zona -->
+                <label for="zona">Seleccione zona geográfica:</label>
+                <select name="zona">
+                    <option value="centro">Centro</option>
+                    <option value="norte">Norte</option>
+                    <option value="sur">Sur</option>
+                </select>
+                <br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Datos de Cuenta</legend>
+                <!-- Usuario y Contraseña -->
+                <label for="user">Usuario: </label>
+                <input id="user" size="10" type="text" name="user" >
+                
+                <label for="pass">Clave: </label>
+                <input id="pass" size="10" type="password" name="pass" >
+                
+                <!-- Ingreso de la direccion de correo -->
+                <label for="email">email: </label>
+                <input id="email" type="email" name="email" >
+                
+
+               <!-- Ingreso de un archivo -->
+                <label for="foto">foto: </label>
+                <input id="foto" type="file" name="foto" >
+                <br>
+            </fieldset>
+            <br>
+            
+            <!-- Botones para controlar el formulario -->
+            <input class="reset" type="reset" value="Borrar formulario">
+            <input class="submit" type="submit" value="Enviar datos">
+        </div>
+    </form>
+    
+    <footer>
+        <p>¡Una vez completado los datos te va a llegar un mail a tu correo electronico!</p>
+        <div class="arrow"><a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
+    </footer>
+</body>
+</html>
