@@ -47,7 +47,7 @@
 .article-items {
     display: grid;
     width: 100%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     grid-gap: 5px 5px;
     padding: 30px;
 }
@@ -91,7 +91,7 @@ legend {
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 600px)
 {
     .container {
         grid-template: "left" 150px
@@ -99,6 +99,15 @@ legend {
             "footer" 100px
             / 100vw;
     }
+    
+    .article-items {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-gap: 5px 5px;
+        padding: 30px;
+    }
+
     
     .left {
         overflow: scroll;
