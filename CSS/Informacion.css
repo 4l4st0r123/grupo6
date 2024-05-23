@@ -1,15 +1,59 @@
 table, th, td {
-    text-align: center;
     border: 1px solid black;
+    margin: 10px;
 }
 
 table {
-    width: 750px;
+    width: 80vw;
     text-align: center;
+    background-color: rgba(0,36,41,0.75);
 }
 
 th, td {
     height: 50px;
+    color: white;
+}
+
+main > div {
+    background-color: rgba(128,232,252,0.5);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px 30px;
+}
+
+span {
+    color: white;
+    background-color: rgba(0,36,41,0.75);
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.contactos > div {
+    position: relative;
+    display: inline-block;
+}
+
+.texto {
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+}
+
+.texto li {
+    list-style: none;
+    color: white;
+}
+
+.mapa {
+    text-align: center;
+    width: 40vw;
+}
+
+
+.TP_info, .TP_caracteristicas {
+    display: none;
 }
 
 .Color {

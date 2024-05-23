@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuario</title>
+    <link rel="icon" href="IMG/Chango.ico">
+    <link rel="stylesheet" href="CSS/usuario.css">
+    <link rel="stylesheet" href="CSS/general-style.css">
+    <script src="JS/general-code.js"></script>
+    <script src="https://kit.fontawesome.com/01a7edaade.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="main-logo">
+            <div class="logo">
+                <a href="Index.html"><img src="IMG/LogoIco.png" alt="ChangoPay"></a>
+            </div>
+            <div class="cart">
+                <i class="fas fa-user" onclick="redirect('Usuario.html');"></i>
+                <i class="fas fa-shopping-cart" onclick="redirect('Productos.html');"></i>
+                <i class="fas fa-bars" onclick="mostrar();" title="mostrar/ocultar navegador"></i>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><i class="fas fa-home"></i><a href="Index.html">Pagina inicial</a></li>
+                <li class="nav__li"><i class="fas fa-info-circle"></i><a href="Informacion.html">Informacion</a></li>
+                <li class="nav__li"><i class="fa-solid fa-address-card"></i><a href="Registro.html">Registro</a></li>
+                <li class="nav__li"><i class="fas fa-newspaper"></i><a href="Ofertas.html">Ofertas</a></li>
+                <li class="nav__li"><i class="fas fa-store"></i><a href="Productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>
+            Esta es toda la imformacion que tenemos del usuario
+        </h1>
+        <p>&nbsp;</p>
+
+        <table>
+            <tr>
+                <th>Atributo del Formulario</th>
+                <th>Valor Registrado</th>
+            </tr>
+            <script language="javascript">
+                var args = location.search.substr(1).split('&');
+                for (var i = 0; i < args.length; ++i) {
+                    var parts = args[i].split('=');
+                    if (parts != null) {
+                        var field = parts[0];
+                        var value = parts[1];
+                        if (value == null) {
+                            value = "null"
+                        } else {
+                            value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                        }
+                        document.writeln('<tr><td align="center">' + field + '</td>');
+                        document.writeln('<td align="center">' + value + '</td></tr>');
+                    }
+                }
+            </script>
+        </table>
+    </main>
+    
+    <footer>
+        <div class="arrow"><a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
+    </footer>
+    <script src="JS/usuario.js"></script>
+</body>
+</html>

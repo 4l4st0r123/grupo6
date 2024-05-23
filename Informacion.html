@@ -7,6 +7,7 @@
     <link rel="icon" href="IMG/Chango.ico">
     <link rel="stylesheet" href="CSS/Informacion.css">
     <link rel="stylesheet" href="CSS/general-style.css">
+    <script src="JS/general-code.js"></script>
     <script src="https://kit.fontawesome.com/01a7edaade.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,9 +17,9 @@
                 <a href="Index.html"><img src="IMG/LogoIco.png" alt="ChangoPay"></a>
             </div>
             <div class="cart">
-                <i class="fas fa-user"></i>
-                <i class="fas fa-shopping-cart"></i>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-user" onclick="redirect('Usuario.html');"></i>
+                <i class="fas fa-shopping-cart" onclick="redirect('Productos.html');"></i>
+                <i class="fas fa-bars" onclick="mostrar();" title="mostrar/ocultar navegador"></i>
             </div>
         </div>
 <!--        <i class="fa-brands fa-youtube"></i>-->
@@ -32,109 +33,134 @@
             </ul>
         </nav>
     </header>
-    <h1>Criterios del Trabajo integrador</h1>
-    <h2>¿Cómo se llevará a cabo el desarrollo del proyecto?</h2>
-    <ol>
-        <li>En equipo: conformados por 4 miembros cada uno, lo cual es un requisito 
-        obligatorio.</li>
-        <li>Un representante: Cada equipo deberá designar a un representante que 
-        actuará como punto de contacto directo con el Instructor del curso.</li>
-    </ol>
+    <main>
+        <div class="contactos">
+            <h1>Datos de contacto</h1>
+            <div class="texto">
+                <p>Visite nuestras redes sociales:</p>
+                <ul>
+                    <li><span onclick="alert('redireccionando');"><i class="fa-brands fa-youtube"></i> Youtube</span></li>
+                    <li><span onclick="alert('redireccionando');"><i class="fa-brands fa-facebook-f"></i> Facebook</span></li>
+                    <li><span onclick="alert('redireccionando');"><i class="fa-brands fa-twitter"></i> Twitter</span></li>
+                    <li><span onclick="alert('redireccionando');"><i class="fa-brands fa-instagram"></i> Instagram</span></li>
+                </ul>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.7343535501186!2d-58.40221189716862!3d-34.58765834405286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9c0321e593%3A0xc8e920e5bf30c9c1!2sJos%C3%A9%20Andr%C3%A9s%20Pacheco%20de%20Melo%202501%2C%20C1425AUC%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e1!3m2!1ses!2sar!4v1716490244667!5m2!1ses!2sar" 
+                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p>Visitenos en: <span>José Andrés Pacheco de Melo 2501</span></p>
+            </div>
+            <br>
+            <input id="mostrar" type="button" value="mostrar mas" onclick="visible();">
+        </div>
+        <div class="TP_info">
+            <h1>Criterios del Trabajo integrador</h1>
+            <h2>¿Cómo se llevará a cabo el desarrollo del proyecto?</h2>
+            <ol>
+                <li>En equipo: conformados por 4 miembros cada uno, lo cual es un requisito obligatorio.</li>
+                <li>Un representante: Cada equipo deberá designar a un representante que actuará como punto de contacto directo con el Instructor del curso.</li>
+            </ol>
+            <span>Este representante será responsable de:</span>
+            <ul>
+                <li>Recibir la retroalimentación del Instructor sobre el proyecto a lo largo de la cursada.</li>
+                <li>Recibir toda comunicación importante relacionada con el desarrollo del proyecto.</li>
+            </ul>
 
-    <p>Este representante será responsable de:</p>
-    <ul>
-        <li>Recibir la retroalimentación del Instructor sobre el proyecto a lo 
-        largo de la cursada.</li>
-        <li>Recibir toda comunicación importante relacionada con el desarrollo 
-        del proyecto.</li>
-    </ul>
-    
-    <h2>Criterios de evaluación</h2>
-    
-    <table>
-        <tr>
-            <th>Consigna</th>
-            <th>Cantidad de Puntos</th>
-        </tr>
-        <tr>
-            <td>El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page.</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>El sitio web debe incluir un formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen, con validación realizada mediante JavaScript para que los campos sean obligatorios.</td>
-            <td>15</td>
-        </tr>
-        <tr>
-            <td>Tener al menos una página totalmente responsive con mínimo 3 puntos de corte con media querys para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular). Para el diseño debe usarse CSS.</td>
-            <td>15</td>
-        </tr>
-        <tr>
-            <td>Utilizar al menos una animación, transformación o una transición.</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>Poseer una estructura HTML maquetada con Flexbox y/o Grid.</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>Se considerará la presentación general del proyecto, la legibilidad del mismo, la navegación sin llegar a puntos de no retorno, la optimización de imagenes para la web y el uso de favicon.</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. (Mandatorio)</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. (Mandatorio)</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación de https://validator.w3.org/ sin errores. (Mandatorio)</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>Utilizar iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts.Es optativo incluir algún elemento de Bootstrap.</td>
-            <td>5</td>
-        </tr>
-    </table>
-    
-    <h2>Fecha Límite</h2>
-    <p>El trabajo debe ser entregado durante la Clase 22. Corresponde a la semana que va desde el 20 al 26 de mayo.</p>
-    
-    <h2>Condiciones de aprobación</h2>
-    <ul>
-        <li>60% del trabajo práctico correcto.</li>
-        <li>El trabajo se cargará en la plataforma especificada por el instructor.</li>
-        <li>Entregar el enlace a la versión navegable del sitio web.</li>
-        <li>Entregar el enlace al repositorio utilizado</li>
-        <li>Entregar la lista de integrantes y cualquier comentario adicional que consideren necesario.</li>
-    </ul>
+            <h2>Criterios de evaluación</h2>
 
-    <h1>Caracteristicas de la pagina</h1>
+            <table>
+                <tr>
+                    <th>Consigna</th>
+                    <th>Cantidad de Puntos</th>
+                </tr>
+                <tr>
+                    <td>El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page.</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>El sitio web debe incluir un formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen, con validación realizada mediante JavaScript para que los campos sean obligatorios.</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Tener al menos una página totalmente responsive con mínimo 3 puntos de corte con media querys para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular). Para el diseño debe usarse CSS.</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Utilizar al menos una animación, transformación o una transición.</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Poseer una estructura HTML maquetada con Flexbox y/o Grid.</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Se considerará la presentación general del proyecto, la legibilidad del mismo, la navegación sin llegar a puntos de no retorno, la optimización de imagenes para la web y el uso de favicon.</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. (Mandatorio)</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. (Mandatorio)</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación de https://validator.w3.org/ sin errores. (Mandatorio)</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Utilizar iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts.Es optativo incluir algún elemento de Bootstrap.</td>
+                    <td>5</td>
+                </tr>
+            </table>
 
-    <h2>Colores</h2>
-    <h3>Colores Claros</h3>
-    <div class="Color C1">#ffffff</div>
-    <div class="Color C2">#d5f7fe</div>
-    <div class="Color C3">#abf0fd</div>
-    <div class="Color C4">#80e8fc</div>
-    <div class="Color C5">#57e1fb</div><br>
+            <h2>Fecha Límite</h2>
+            <span>El trabajo debe ser entregado durante la Clase 22. Corresponde a la semana que va desde el 20 al 26 de mayo.</span>
 
-    <h3>Colores Base</h3>
-    <div class="Color B1">#57e1fb</div>
-    <div class="Color B2">#41cef8</div>
-    <div class="Color B3">#2cbcd5</div>
-    <div class="Color B4">#16aac2</div>
-    <div class="Color B5">#0097af</div><br>
+            <h2>Condiciones de aprobación</h2>
+            <ul>
+                <li>60% del trabajo práctico correcto.</li>
+                <li>El trabajo se cargará en la plataforma especificada por el instructor.</li>
+                <li>Entregar el enlace a la versión navegable del sitio web.</li>
+                <li>Entregar el enlace al repositorio utilizado</li>
+                <li>Entregar la lista de integrantes y cualquier comentario adicional que consideren necesario.</li>
+            </ul>
+        </div>
+        
+        <div class="TP_caracteristicas">
+            <h1>Caracteristicas de la pagina</h1><br>
 
-    <h3>Colores Oscuros</h3>
-    <div class="Color O1">#0097af</div>
-    <div class="Color O2">#006f81</div>
-    <div class="Color O3">#004a55</div>
-    <div class="Color O4">#002429</div>
-    <div class="Color O5">#000000</div><br>
+            <h2>Links de contenido</h2>
+            <span>carpeta drive: <a href="https://drive.google.com/drive/folders/1x9yrTmvDaW29abf39Lv5vyhwCPBbIG9f">sitio de compras online</a></span>
+            <span>prototipo de sitio web: <a href="http://cool-puppy-160030.netlify.app">cool-puppy-160030</a></span>
+            
+            <h2>Colores</h2>
+            <h3>Colores Claros</h3>
+            <div class="Color C1">#ffffff</div>
+            <div class="Color C2">#d5f7fe</div>
+            <div class="Color C3">#abf0fd</div>
+            <div class="Color C4">#80e8fc</div>
+            <div class="Color C5">#57e1fb</div><br>
+
+            <h3>Colores Base</h3>
+            <div class="Color B1">#57e1fb</div>
+            <div class="Color B2">#41cef8</div>
+            <div class="Color B3">#2cbcd5</div>
+            <div class="Color B4">#16aac2</div>
+            <div class="Color B5">#0097af</div><br>
+
+            <h3>Colores Oscuros</h3>
+            <div class="Color O1">#0097af</div>
+            <div class="Color O2">#006f81</div>
+            <div class="Color O3">#004a55</div>
+            <div class="Color O4">#002429</div>
+            <div class="Color O5">#000000</div><br>
+        </div>        
+    </main>
     <footer>
         <div class="arrow"><a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
     </footer>
+    <script src="JS/informacion.js"></script>
 </body>
 </html>
