@@ -36,36 +36,142 @@
         <h1>
             Esta es toda la imformacion que tenemos del usuario
         </h1>
-        <p>&nbsp;</p>
 
-        <table>
-            <tr>
-                <th>Atributo del Formulario</th>
-                <th>Valor Registrado</th>
-            </tr>
-            <script language="javascript">
-                var args = location.search.substr(1).split('&');
-                for (var i = 0; i < args.length; ++i) {
-                    var parts = args[i].split('=');
-                    if (parts != null) {
-                        var field = parts[0];
-                        var value = parts[1];
-                        if (value == null) {
-                            value = "null"
-                        } else {
-                            value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
-                        }
-                        document.writeln('<tr><td align="center">' + field + '</td>');
-                        document.writeln('<td align="center">' + value + '</td></tr>');
-                    }
-                }
-            </script>
+        <table id="content">
+            
         </table>
     </main>
     
     <footer>
+        <div id="demo">mana, mini, money</div>
         <div class="arrow"><a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
     </footer>
     <script src="JS/usuario.js"></script>
 </body>
 </html>
+
+<!--
+
+var args = location.search.substr(1).split('&');
+for (var i = 0; i < args.length; ++i) {
+    var parts = args[i].split('=');
+    if (parts != null) {
+        var field = parts[0];
+        var value = parts[1];
+        if (value == null) {
+            value = "null"
+        } else {
+            value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+        }
+        document.writeln('<tr><td align="center">' + field + '</td>');
+        document.writeln('<td align="center">' + value + '</td></tr>');
+    }
+}
+
+
+
+
+
+alert("hello");
+
+var myObj, myJSON, text, obj;
+
+//Almacenar data:
+myObj = { "name":"Mariana", "age":45, "city":"Madrid" };
+myJSON = JSON.stringify(myObj); //paso el objeto a Json
+localStorage.setItem("testJSON", myJSON); //guardo el Json en localStorage en "testJson"
+
+//Recuperar data (ver con F12 en Application -> localStorage):
+text = localStorage.getItem("testJSON"); //guardo el Json en la variable text
+obj = JSON.parse(text); //convierto Json a Objeto de Javascript
+document.getElementById("demo").innerHTML = obj.name + " " + obj.age + " " + obj.city;
+console.log("=== Fin ===");
+
+
+//JSON = JavaScript Object Notation
+//JSON is a format for storing and transporting data.
+//Declaramos el objeto JSON
+var objJSON = {
+    "empleados": [
+        { "nombre": "Juan", "apellido": "Pérez"},
+        { "nombre": "Ana", "apellido": "López" },
+        { "nombre": "Pedro", "apellido": "Fernández" }
+    ],
+    "jefe": "Luis Rodriguez",
+    "piso": 3,
+}
+
+//Mostramos los datos
+console.log("Jefe: ",objJSON.jefe)
+console.log(" - Piso: ",objJSON.piso)
+for (x in objJSON.empleados){
+    console.log(objJSON.empleados[x].nombre + " " +objJSON.empleados[x].apellido)
+}
+console.log("=== Fin ===");
+
+
+var ej1 = { x: 5, y: 6 }
+var ej2 = [new Number(3), new String('false'), new Boolean(false)]
+var ej3 = { x: [10, undefined, function () { }, Symbol('')] }
+var ej4 = new Date(2021, 10, 12, 15, 4, 5)
+
+console.log(JSON.stringify(ej1))
+console.log(JSON.stringify(ej2))
+console.log(JSON.stringify(ej3))
+console.log(JSON.stringify(ej4))
+
+var myObj = { //Objeto JS
+    name: "John",
+    age: 31,
+    city: "New York" }
+var myJSON = JSON.stringify(myObj) //Convertido a JSON
+
+console.log("Objeto JS:", myObj)
+console.log("Objeto JSON:",myJSON)
+console.log("JSON a JS:",JSON.parse(myJSON)) //De nuevo convertimos a JS
+console.log("=== Fin ===");
+
+
+//Objeto JS
+var objetoJS = {
+    name: "John",
+    age: 31,
+    city: "New York" }
+console.log("Objeto JS:", objetoJS)
+
+//Convertimos objetoJS en JSON
+var objetoJSON = JSON.stringify(objetoJS)
+console.log("Objeto JSON:", objetoJSON)
+
+//Convertimos objetoJSON en JS
+var objetoJS2=JSON.parse(objetoJSON)
+console.log("Objeto JS:", objetoJS2)
+
+//Modifico un dato
+objetoJS.name = "Gilbert"
+console.log("Modifico el nombre: objetoJS.name:", objetoJS.name)
+
+//Convertir String en fecha
+
+const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+const obj = JSON.parse(text);
+obj.birth = new Date(obj.birth);
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth; 
+
+
+// Convirtiendo de JSON a JavaScript:
+
+var ej1 = JSON.parse('{}')              // {}
+var ej2 = JSON.parse('true')            // true
+var ej3 = JSON.parse('"foo"')           // "foo"
+var ej4 = JSON.parse('[1, 5, "false"]') // [1, 5, "false"]
+var ej5 = JSON.parse('null')            // null
+
+console.log(ej1)
+console.log(ej2)
+console.log(ej3)
+console.log(ej4)
+console.log(ej5)
+console.log("=== Fin ===");
+
+-->

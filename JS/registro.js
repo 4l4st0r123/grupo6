@@ -13,7 +13,6 @@
             alert("Tiene que escribir su nombre");
             document.formulario.nombre.focus()
             e.preventDefault();
-
         } else {
             var letras = /^[a-zA-Zá-üñÑ]+$/;
             if (!formulario.nombre.value.match(letras)) {
@@ -75,9 +74,9 @@
     }
     
     // --------------------------------------------------------   
-    // Validamos Terminos y Condiciones      
+    // Validamos localidad
     // --------------------------------------------------------              
-    var validarFecha = function (e) {
+    var validarZona = function (e) {
         if (formulario.zona.selectedIndex == 0) { //no elegí nada, entonces estoy en el índice 0
             alert("Debe seleccionar su localidad.")
             formulario.zona.focus()
@@ -101,13 +100,44 @@
     var validar = function (e) {  // "e" es el evento recibido del form (https://developer.mozilla.org/es/docs/Web/API/Event/preventDefault)
         validarNombre(e);
         validarApellido(e);
-        validarFecha(e)
         validarRadio(e);
+        validarFecha(e);
+        validarZona(e);
         validarCheckbox(e);
+        
+        var formulario, gender, identity, val_zona, Persona, newUser;
+
+        formulario = document.getElementsByName('formulario')[0];
+
+        gender = formulario.genero;
+
+        for (let i in gender) {
+            if (gender[i].checked) {
+                identity = gender[i].value;
+            }
+        }
+
+        val_zona = formulario.zona.selectedIndex
+
+        Persona = {
+            "Nombre": formulario.nombre.value,
+            "Apellido": formulario.apellido.value,
+            "DNI": formulario.dni.value,
+            "Género": identity,
+            "Fecha": formulario.fecha.valueAsDate,
+            "Calle": formulario.direccion.value,
+            "Número": formulario.dirNum.value,
+            "zona_geo": formulario.zona[val_zona].value,
+            "Usuario": formulario.user.value,
+            "Clave": formulario.pass.value,
+            "email": formulario.email.value,
+            "foto": formulario.foto.value,
+        }
+
+        newUser = JSON.stringify(Persona);
+        localStorage.setItem("nuevoUsuario", newUser);
     };
 
     // --------------------------------------------------------
-    // Espera que se presione "enviar" y llama a la función "validar"
-    // submit es un evento DEL FORM, no del botón!
     formulario.addEventListener("submit", validar);
 }())
