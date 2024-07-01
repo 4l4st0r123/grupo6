@@ -77,8 +77,15 @@
             </article>-->
             <article class="article-items">
                 <div class="producto">
-                    <div><p>BANANA</p></div>
-                    <div><img src="IMG/Verduleria/bananas.png" alt="bananas"></div>
+                    <div class="nombr-product"><p>BANANA</p></div>
+                    <div class="img-product">
+                        <img src="IMG/Verduleria/bananas.png" alt="bananas">
+                    </div>
+                    <div class="info-product">
+                        <h4>OFERTA</h4>
+                        <h3 class="price">$XXXX</h3>
+                        <button><p>Añadir al carrito</p></button>
+                    </div>
                 </div>
 
                 <div class="producto">
@@ -93,17 +100,17 @@
 
                 <div class="producto">
                     <div><p>SHAMPOO</p></div>
-                    <div><img src="IMG/shamp.png" alt="shampoo"></div>
+                    <div><img src="IMG/Limpieza/Shampoo.png" alt="shampoo"></div>
                 </div>
 
                 <div class="producto">
                     <div><p>JABÓN</p></div>
-                    <div><img src="IMG/jab.png" alt="jabon"></div>
+                    <div><img src="IMG/Limpieza/jab.png" alt="jabon"></div>
                 </div>
 
                 <div class="producto">
                     <div><p>LIMPIADOR</p></div>
-                    <div><img src="IMG/limp.png" alt="limpiador"></div>
+                    <div><img src="IMG/Limpieza/Limpiador.png" alt="limpiador"></div>
                 </div>
 
                 <div class="producto">
@@ -124,7 +131,7 @@
                 <div class="producto">
                     <div><p>YOGURT</p></div>
                     <div><img src="IMG/Lacteos/Yogur_Frutilla.png" alt="yogurt"></div>
-               </div>
+                </div>
 
                 <div class="producto">
                     <div><p>BERENJENA</p></div>
@@ -169,6 +176,65 @@
             <p>Has llegado al final de la página, si quieres ver nuestras ofertas has <a href="Ofertas.html">CLICK AQUÍ</a></p>
         </section>
     </main>
+    <script>
+        var imags_verdul, imags_lacts, imags_limp, dir_verdul, dir_lacts, 
+        dir_limp, gen_product, contenido;
+
+        dir_verdul = "IMG/Verduleria/"; 
+        dir_lacts = "IMG/Lacteos/";
+        dir_limp = "IMG/Limpieza/"; 
+        
+        imags_verdul = ["bananas.png", "perejil.png", "01.jpg", "02.jpg", 
+            "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", 
+            "09.jpg", "010.jpg", "011.jpg", "012.jpg", "013.jpg", "014.jpg", 
+            "015.jpg", "016.jpg", "017.jpg", "018.jpg", "019.jpg", "020.jpg", 
+            "021.jpg", "022.jpg", "023.jpg", "024.png", "025.jpg", "026.jpg"];
+        imags_lacts = ["Crema.png", "Crema-Batida.png", "dulce_de_leche.png", 
+            "manteca.png", "queso.png", "Yogur_Frutilla.png", "yogur_pote.png", 
+            "yogur_sachet.png", "Yogurt_frutilla2.png", "Yogurt_Vainilla.png"];
+        imags_limp = ["Detergente1.png", "Detergente2.png", "Detergente3.png", 
+            "jab.png", "Jabon-Polvo.png", "Limpiador.png", "Limpiador-Baños.png", 
+            "limpiador-liquido.png", "Servilletas.png", "Shampoo.png", 
+            "Suavizante.png"];
+
+        gen_product = [[dir_verdul, imags_verdul], [dir_lacts, imags_lacts], 
+            [dir_limp, imags_limp]];
+
+        contenido = document.querySelector(".article-items");
+        for (let col in gen_product) {
+            let list_data = gen_product[col][1];
+            let dir_data = gen_product[col][0];
+            
+            const oferta = document.createElement("h4");
+            const precio = document.createElement("h3");
+            const info = document.createElement("div.info-product");
+
+            for (let row in list_data) {
+
+                const despenza = document.createElement("div");
+                despenza.setAttribute("class", "producto");
+                const titulo = document.createElement("div");
+                titulo.setAttribute("class", "nombr-product");
+                const imagen = document.createElement("div");
+                imagen.setAttribute("class", "img-product");
+                const information = document.createElement("div");
+                information.setAttribute("class", "info-product");
+                const parrafo = document.createElement("p");
+
+                const image = document.createElement("img");
+                let name = list_data[row];
+                let img_src = dir_data + name;
+                let text = document.createTextNode(name.toUpperCase());
+
+                image.setAttribute("src", img_src);
+                parrafo.appendChild(text);
+                titulo.appendChild(parrafo);
+                despenza.appendChild(titulo);
+                despenza.appendChild(image);
+                contenido.appendChild(despenza);
+            }
+        }
+    </script>
     <footer>
         <div class="arrow"><a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
     </footer>

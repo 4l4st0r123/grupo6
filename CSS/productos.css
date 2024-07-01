@@ -68,7 +68,7 @@ article img:hover {
     font-size: 20px;
     height: auto;
     padding: 5px;
-    background-color: grey;
+    background-color: #d5f7fe;
 }
 
 .article-order {
@@ -93,8 +93,8 @@ fieldset {
 }
 
 label {
-  font-size: 1.125rem;
-  text-shadow: 1px 1px 1px rgba(0,0,0,10)
+    font-size: 1.125rem;
+    text-shadow: 1px 1px 1px rgba(0,0,0,10)
 }
 
 span {
@@ -131,6 +131,47 @@ span {
         height: 100px;
         width: 100px;
     }
+}
+
+h4 {
+    /*font-size: 3rem;*/
+    font-weight: bolder;
+    line-height: 1.2;
+    /*agregado*/
+    color: #F00;
+    font-size: 1rem;
+}
+.info-product{
+
+    /*background-color: grey;*/
+    text-align: center;
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /*agregado*/
+    background-color: #d5f7fe;
+    font-size: 1rem;
+    color:#000;
+}
+
+.price{
+    /*color: #FFF;
+    font-size: 18px;
+    font-weight: 900;*/
+    /*Agregado*/
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.info-product button{
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #2cbcd5;
+    padding: 5px 2px 5px 2px;
+    cursor: pointer;
 }
 
 /*
