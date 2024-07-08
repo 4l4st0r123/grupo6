@@ -10,7 +10,16 @@
         <script src="https://kit.fontawesome.com/01a7edaade.js" crossorigin="anonymous"></script>
         <style>
             body::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
                 background-image: url("/IMG/supermarket.jpg");
+                background-size: cover;
+                background-position: center;
             }
 
             main {
@@ -22,7 +31,7 @@
 
             .contenedor-centrado {
                 display:flex;
-                width: 100%;
+                width: 300px;
                 justify-content: center;
             }
 
@@ -55,7 +64,7 @@
     <body>
         <h1>Usted ha accedido a la Base de datos</h1><br>
         <div class="logo-centrado">
-            <img src="./static/imagenes/icoChango.png" alt="logo_codo">
+            <img src="./IMG/icoChango.png" alt="logo_codo">
         </div>
         <table>
             <tr>
