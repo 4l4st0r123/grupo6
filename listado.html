@@ -42,6 +42,11 @@
             </thead>
             <tbody id="tablaProductos"></tbody>
         </table><br>
+        <label for="orderList">Canbiar orden:</label>
+            <select name="tipo_orden" id="orderList">
+                <option value="productos">Codigo producto</option>
+                <option value="productosA">Tipo de oferta</option>
+            </select>
         <div class="contenedor-centrado">
             <a id="button" href="admin.html">Menu principal</a>
         </div>
@@ -50,9 +55,10 @@
         const URL = "https://alphonse123.pythonanywhere.com/"
         // Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
         //const URL = "https://USUARIO.pythonanywhere.com/"
+        var order = document.getElementById('orderList').value
 
         // Realizamos la solicitud GET al servidor para obtener todos los productos.
-        fetch(URL + 'productos')
+        fetch(URL + order)
             .then(function (response) {
                 if (response.ok) {
                     //Si la respuesta es exitosa (response.ok), convierte 
