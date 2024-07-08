@@ -11,6 +11,10 @@ body {
     color:white;
 }
 
+body::before {
+    background-image: none;
+}
+
 .contenedor-centrado {
     display:flex;
     width: 100%;
@@ -118,18 +122,19 @@ input[type="submit"]:hover {
 button {
     padding: 8px;
     margin:4px;
-    background-color: darkgrey;
+    background-color: lightgray;
     color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 800;
 }
 
 button:hover {
-    background-color: grey;
+    background-color: gray;
 }
 
-a {
+#button {
     padding: 8px;
     margin:4px;
     background-color: #80e8fc;
@@ -142,7 +147,7 @@ a {
     font-weight: 800;
 }
 
-a:hover {
+#button:hover {
     background-color: #002429;
     color:#80e8fc;
 }

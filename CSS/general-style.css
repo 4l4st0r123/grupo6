@@ -11,7 +11,7 @@ body {
     line-height: 1.4;
     color:#000000;
     margin: 0;
-  }
+}
 
 body::before {
     content: '';
@@ -48,9 +48,9 @@ p {
 }
 
 footer > p {
-  text-align: center;
-  align-items: center;
-  padding-bottom: 35px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 35px;
 }
 
 /* Header */

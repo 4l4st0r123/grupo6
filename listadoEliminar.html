@@ -5,13 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eliminar Productos 🚀</title>
+        <link rel="icon" href="IMG/Chango.ico">
+        <link rel="stylesheet" href="CSS/general-style.css">
         <link rel="stylesheet" href="./static/css/estilos.css">
+        <script src="https://kit.fontawesome.com/01a7edaade.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <nav class="navbar-index">
-                <img class="logo-nav" src="./static/imagenes/LogoIco.png" alt="logo agencia de aprendizaje">
-            </nav>
+        <header id="header">
+            <div class="main-logo">
+                <div class="logo">
+                    <a href="Index.html"><img src="IMG/LogoIco.png" alt="ChangoPay"></a>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-user" onclick="redirect('Usuario.html');"></i>
+                    <i class="fas fa-shopping-cart" onclick="redirect('admin.html');"></i>
+                    <i class="fas fa-bars" onclick="mostrar();" title="mostrar/ocultar navegador"></i>
+                </div>
+            </div>
+            <!--        <i class="fa-brands fa-youtube"></i>-->
         </header>
         <div class="logo-centrado">
             <img src="./static/imagenes/supermarket.jpg" alt="logo">
@@ -33,11 +44,11 @@
             </tbody>
         </table><br>
         <div class="contenedor-centrado">
-            <a href="index.html">Menu principal</a>
+            <a id="button" href="admin.html">Menu principal</a>
         </div>
         <script>
-            const URL = "http://127.0.0.1:5000/"
-            //const URL = "https://alphonse123.pythonanywhere.com/"
+            //const URL = "http://127.0.0.1:5000/"
+            const URL = "https://alphonse123.pythonanywhere.com/"
             // Obtiene el contenido del inventario
             function obtenerProductos() {
                 fetch(URL + 'productos') 

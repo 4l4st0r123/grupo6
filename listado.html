@@ -5,13 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Listado de Productos 🚀</title>
+        <link rel="icon" href="IMG/Chango.ico">
+        <link rel="stylesheet" href="CSS/general-style.css">
         <link rel="stylesheet" href="./static/css/estilos.css">
+        <script src="https://kit.fontawesome.com/01a7edaade.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <nav class="navbar-index ">
-                <img class="logo-nav" src="./static/imagenes/LogoIco.png" alt="logo agencia de aprendizaje">
-            </nav>
+        <header id="header">
+            <div class="main-logo">
+                <div class="logo">
+                    <a href="Index.html"><img src="IMG/LogoIco.png" alt="ChangoPay"></a>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-user" onclick="redirect('Usuario.html');"></i>
+                    <i class="fas fa-shopping-cart" onclick="redirect('admin.html');"></i>
+                    <i class="fas fa-bars" onclick="mostrar();" title="mostrar/ocultar navegador"></i>
+                </div>
+            </div>
+            <!--        <i class="fa-brands fa-youtube"></i>-->
         </header>
         <div class="logo-centrado">
             <img src="./static/imagenes/supermarket.jpg" alt="logo">
@@ -32,11 +43,11 @@
             <tbody id="tablaProductos"></tbody>
         </table><br>
         <div class="contenedor-centrado">
-            <a href="index.html">Menu principal</a>
+            <a id="button" href="admin.html">Menu principal</a>
         </div>
     <script>
-        const URL = "http://127.0.0.1:5000/"
-        //const URL = "https://alphonse123.pythonanywhere.com/"
+        //const URL = "http://127.0.0.1:5000/"
+        const URL = "https://alphonse123.pythonanywhere.com/"
         // Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
         //const URL = "https://USUARIO.pythonanywhere.com/"
 
@@ -67,19 +78,19 @@
                         '<td align="right">' + producto.cantidad + '</td>' +
                         '<td align="right">' + producto.precio + '</td>' +
                         // Mostrar miniatura de la imagen
-                        '<td align="center"><img src=./static/imagenes/' + 
-                        producto.imagen_url + ' alt="Imagen del producto" style="width: 100px;"></td>' + 
+                        /*
+'<td align="center"><img src=./static/imagenes/' + producto.imagen_url + 
+                        ' alt="Imagen del producto" style="width: 100px;"></td>' + 
                         '<td align="right">' + producto.info_oferta + '</td>';
+                        */
                         //Al subir al servidor, deberá utilizarse la siguiente 
                         //ruta. USUARIO debe ser reemplazado por el nombre de 
                         //usuario de Pythonanywhere
-                        
-                        /* 
+
 '<td align="center"><img src=https://www.pythonanywhere.com/user/alphonse123/files/home/alphonse123/static/imagenes' + 
 producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' + 
 '<td align="right">' + producto.info_oferta + '</td>';
-                        */
-                    
+
                         //Una vez que se crea la fila con el contenido del
                         //producto, se agrega a la tabla utilizando el método 
                         //appendChild del elemento tablaProductos.
